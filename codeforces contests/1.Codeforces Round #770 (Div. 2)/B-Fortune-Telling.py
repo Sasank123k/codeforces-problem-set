@@ -1,0 +1,22 @@
+test=int(input())
+while(test>0):
+    n,x,y=map(int,input().split())
+    lst=list(map(int,input().split()))
+    if(y%2==0):
+        destination=0
+    else:
+        destination=1
+    if(x%2==0):
+        start=0
+    else:
+        start=1
+    for i in lst:
+        if(i%2==0):
+            start+=0
+        else:
+            start+=1
+    if(start%2==destination):
+        print("Alice")
+    else:
+        print("Bob")
+    test-=1
